@@ -53,8 +53,8 @@ class RemoteWebDriver implements WebDriver, JavaScriptExecutor {
     $url = 'http://localhost:4444/wd/hub',
     $desired_capabilities = null,
     $timeout_in_ms = 300000,
-	$auth_method = CURLAUTH_ANY,
-	$auth_creds = null
+    $auth_method = CURLAUTH_ANY,
+    $auth_creds = null
   ) {
     $url = preg_replace('#/+$#', '', $url);
 
